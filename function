@@ -2,7 +2,7 @@
 basepath=$(cd `dirname $0`; pwd)
 . $basepath/config
 docker_install () {
-    for node in $docker_nodes
+    aaafor node in $docker_nodes
     do
     ip a | grep -w $node
     if [ $? -eq 0 ];then
